@@ -91,7 +91,7 @@ React, OpenAI, Wolfram Alpha API
 
 ## 🌐 Live Website
 
-**[Visit My Portfolio →](https://patelnikul.com)**
+**[Visit My Portfolio →](https://nikulp23.github.io)**
 
 ---
 

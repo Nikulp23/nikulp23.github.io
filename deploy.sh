@@ -36,4 +36,4 @@ npm run deploy
 
 echo ""
 echo "Deployment complete!"
-echo "Website will be live at https://patelnikul.com in a few minutes"
+echo "Website will be live at https://nikulp23.github.io in a few minutes"
