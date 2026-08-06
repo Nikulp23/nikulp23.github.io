@@ -11,8 +11,7 @@ import {
   import classes from './FeaturesCards.module.css';
   import { motion } from 'framer-motion';
   import React from 'react';
-  import rcos from './logos/rcos.png';
-  import datastructures from './logos/datastructures.png';
+  import capitalone from './logos/capitalone.png';
   import coned from './logos/coned.png';
   import nyl from './logos/nyl.avif';
 
@@ -36,8 +35,7 @@ import {
         '• Subscribed an SQS queue to a cross-account SNS topic to trigger the pipeline, eliminating silent message loss with retries and a 14-day-retention dead-letter queue.',
         '• Provisioned S3 and Lambda infrastructure as code through a Jenkins-based CI/CD pipeline, with a least-privilege execution role backed by AWS Secrets Manager.'
       ],
-      // Drop a capitalone.png into ./logos and import it here to show a logo.
-      image: null,
+      image: capitalone,
     },
     {
       title: 'Software Engineering Intern',
@@ -60,26 +58,6 @@ import {
         '• Developed an Outage Scheduling System application with AngularJS and .NET Web APIs.',
       ],
       image: coned,
-    },
-    {
-      title: 'Software Lead',
-      date: 'DEC 2022 - APR 2025',
-      technologies: [ "REACT.JS" , "NODE.JS", "DATADOG"],
-      description:[
-        '• Led a 6-engineer open-source team for 2+ years building CartX, a React and Node.js platform that compares product prices across stores, owning code reviews, CI/CD, and sprint planning.',
-        '• Instrumented the Node.js backend with Datadog APM and custom metrics, building dashboards and alerts that detected failures in the 100K+/day ingestion pipeline.',
-      ],
-          image: rcos,
-    },
-    {
-      title: 'Undergrad Teaching Assistant',
-      date: 'AUG 2023 - MAY 2026',
-      technologies: [ "PYTHON", "C++", "SQL"],
-      description: [
-        '• Mentored 500+ students across Computer Science I (Python), Data Structures (C++), and Database Systems (SQL) through lab sections, office hours, and one-on-one debugging sessions.',
-        '• Assisted professors in scanning and grading exams, delivering grading tasks within a single day.'
-      ],
-      image: datastructures,
     }
   ];
   
@@ -153,7 +131,7 @@ import {
         From leading innovative projects to gaining hands-on industry experience, my journey in technology reflects a commitment to growth, excellence, and continuous learning.
         </Text>
   
-        <SimpleGrid cols={{ base: 1, sm: 2, md: 4 }} spacing="xl" mt={30}>
+        <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="xl" mt={30}>
           {features}
         </SimpleGrid>
       </Container>
