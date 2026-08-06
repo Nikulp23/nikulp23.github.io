@@ -7,6 +7,7 @@ import RpiLogo from './rpi.png';
 import ConEdLogo from './icon.webp';
 import NyLifeLogo from './nyl.avif';
 import GradLogo from './grad.png';
+import CapitalOneLogo from './capitalone.png';
 
 import styles from './About.module.css';
 
@@ -61,6 +62,7 @@ export function AboutSkillsToggle() {
     },
     {
       side: 'right',
+      logo: CapitalOneLogo,
       date: 'JUN 2026 - AUG 2026',
       description: 'Software Engineering Intern @ Capital One',
     }
