@@ -29,6 +29,18 @@ import {
   const mockdata = [
     {
       title: 'Software Engineering Intern',
+      date: 'JUN 2026 - AUG 2026',
+      technologies: [ "PYTHON", "AWS", "SNOWFLAKE" ],
+      description: [
+        '• Built a serverless, event-driven pipeline on AWS that syncs user entitlements from 5 vendors into Capital One’s access-management platform, closing a compliance gap in third-party access tracking.',
+        '• Subscribed an SQS queue to a cross-account SNS topic to trigger the pipeline, eliminating silent message loss with retries and a 14-day-retention dead-letter queue.',
+        '• Provisioned S3 and Lambda infrastructure as code through a Jenkins-based CI/CD pipeline, with a least-privilege execution role backed by AWS Secrets Manager.'
+      ],
+      // Drop a capitalone.png into ./logos and import it here to show a logo.
+      image: null,
+    },
+    {
+      title: 'Software Engineering Intern',
       date: 'MAY 2025 - DEC 2025',
       technologies: [ "JAVA", "KOGITO", "POSTMAN" ],
       description: [
@@ -50,22 +62,22 @@ import {
       image: coned,
     },
     {
-      title: 'Project Lead and Developer',
-      date: 'AUG 2023 - Present',
-      technologies: [ "REACT.JS" , "PYTHON"],
+      title: 'Software Lead',
+      date: 'DEC 2022 - APR 2025',
+      technologies: [ "REACT.JS" , "NODE.JS", "DATADOG"],
       description:[
-        '• Leading a team in developing CartX, a cost-optimizing shopping app, providing full-stack leadership with React for frontend and Node.js for backend, achieving up to 30% reduction in user shopping time.',
-        '• Architected and implemented RESTful Python for web scraping to extract data from 4+ major retail chains.',
+        '• Led a 6-engineer open-source team for 2+ years building CartX, a React and Node.js platform that compares product prices across stores, owning code reviews, CI/CD, and sprint planning.',
+        '• Instrumented the Node.js backend with Datadog APM and custom metrics, building dashboards and alerts that detected failures in the 100K+/day ingestion pipeline.',
       ],
           image: rcos,
     },
     {
       title: 'Undergrad Teaching Assistant',
-      date: 'AUG 2023 - Present',
-      technologies: [ "AWS "],
+      date: 'AUG 2023 - MAY 2026',
+      technologies: [ "PYTHON", "C++", "SQL"],
       description: [
-        '• Managing weekly lab sessions and office hours focused on Data Structures and Algorithms, overseeing student progress through checkpoints, and providing personalized academic support for C++ assignments.',
-        '• Efficiently assisting professors in scanning and grading exams for over 450 students, ensuring delivery of grading tasks within a single day.'
+        '• Mentored 500+ students across Computer Science I (Python), Data Structures (C++), and Database Systems (SQL) through lab sections, office hours, and one-on-one debugging sessions.',
+        '• Assisted professors in scanning and grading exams, delivering grading tasks within a single day.'
       ],
       image: datastructures,
     }
@@ -96,7 +108,7 @@ import {
       {/* eslint-disable-next-line */}
       <Card shadow="md" radius="md" className="${classes.card} test" padding="xl">
       
-        {standardizeImage(feature.image, feature.title)}
+        {feature.image && standardizeImage(feature.image, feature.title)}
 
         <div style={{ textAlign: 'center' }}>
           <Text fz="lg" fw={600} className={classes.cardTitle} mt="md">

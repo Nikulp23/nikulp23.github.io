@@ -51,13 +51,18 @@ export function AboutSkillsToggle() {
       side: 'left',
       logo: RpiLogo,
       highlight: true,
-      date: 'JAN 2026 - DEC 2026',
+      date: 'JAN 2026 - PRESENT',
       description: (
         <>
-          M.S in Computer Science & ITWS<br></br>
+          M.S. in Computer Science<br></br>
           Rensselaer Polytechnic Institute
         </>
       )
+    },
+    {
+      side: 'right',
+      date: 'JUN 2026 - AUG 2026',
+      description: 'Software Engineering Intern @ Capital One',
     }
   ];
 
