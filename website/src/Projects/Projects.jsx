@@ -109,8 +109,8 @@ const Projects = () => {
           </Title>
   
           <Text c="dimmed" className={classes.description} align="center" mt="md">
-            My career journey showcases a dedication to driving innovative technical
-            projects and a commitment to excellence and continuous.
+            A mix of hackathon builds, open-source work, and side projects I
+            started to solve a problem I ran into.
           </Text>
         </div>
   

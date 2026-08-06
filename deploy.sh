@@ -2,6 +2,9 @@
 
 # Deployment script for personal portfolio
 # Usage: ./deploy.sh "Your commit message"
+#
+# Pushing to main is all that's needed — .github/workflows/deploy.yml
+# builds the site and publishes it to GitHub Pages automatically.
 
 set -e  # Exit on error
 
@@ -17,23 +20,16 @@ COMMIT_MESSAGE="$1"
 echo "Starting deployment process..."
 echo ""
 
-# Step 1: Git add
 echo "Adding changes to git..."
 git add .
 
-# Step 2: Git commit
 echo "Committing changes..."
 git commit -m "$COMMIT_MESSAGE"
 
-# Step 3: Git push
-echo "⬆Pushing to GitHub..."
+echo "Pushing to GitHub..."
 git push origin main
 
-# Step 4: Deploy to GitHub Pages
-echo "Deploying to GitHub Pages..."
-cd website
-npm run deploy
-
 echo ""
-echo "Deployment complete!"
+echo "Pushed. GitHub Actions is now building and deploying."
+echo "Watch it here: https://github.com/Nikulp23/nikulp23.github.io/actions"
 echo "Website will be live at https://nikulp23.github.io in a few minutes"
