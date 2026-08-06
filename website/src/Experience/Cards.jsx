@@ -83,8 +83,7 @@ import {
         className={classes.cardWrapper}
       >
         
-      {/* eslint-disable-next-line */}
-      <Card shadow="md" radius="md" className="${classes.card} test" padding="xl">
+      <Card shadow="md" radius="md" className={classes.card} padding="xl">
       
         {feature.image && standardizeImage(feature.image, feature.title)}
 
